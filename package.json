@@ -5,8 +5,9 @@
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
-    "deploy": "hexo deploy",
-    "server": "hexo server"
+    "deploy": "npm run build && wrangler deploy",
+    "server": "hexo server",
+    "preview": "npm run build && wrangler dev"
   },
   "hexo": {
     "version": "8.1.1"
@@ -29,5 +30,8 @@
     "hexo-theme-landscape": "^1.0.0",
     "hexo-util": "^4.0.0",
     "probe-image-size": "^7.2.3"
+  },
+  "devDependencies": {
+    "wrangler": "^4.85.0"
   }
 }
