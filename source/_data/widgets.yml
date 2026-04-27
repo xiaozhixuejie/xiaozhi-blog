@@ -9,8 +9,8 @@ mete0r_welcome:
     </style>
     <p style="margin: 0 0 8px 0; font-size: 14px; color: var(--text-p1);">欢迎 <span id="welcome-location" style="color: #f472b6; font-weight: bold;">地球</span> 的小伙伴</p>
     <p style="margin: 0 0 8px 0; font-size: 14px; color: var(--text-p1);">您的IP：<span id="welcome-ip" class="fog-ip" style="color: #fff; background: #fbbf24; padding: 2px 8px; border-radius: 8px; font-family: monospace;">正在侦测...</span></p>
-    <p style="margin: 0 0 8px 0; font-size: 14px; color: #7dd3fc; font-weight: bold;">祝你找到属于自己的频率</p>
-    <p style="margin: 0 0 8px 0; font-size: 14px;"><a href="/about/" style="color: #86efac; border-bottom: 1px solid #86efac; text-decoration: none;">我的个人主页</a></p>
+    <p style="margin: 0 0 8px 0; font-size: 14px; color: #7dd3fc; font-weight: bold;">欢迎来到广外 恭喜你开启美化的大学生活！</p>
+    <p style="margin: 0 0 8px 0; font-size: 14px;"><a href="/about/" style="color: #86efac; border-bottom: 1px solid #86efac; text-decoration: none;">学姐滴个人主页</a></p>
     <hr style="border: 0; border-top: 1px solid rgba(0,0,0,0.1); margin: 12px 0;">
     <p style="font-size: 13px; color: var(--text-p3); margin: 0; line-height: 1.6;">若访问速度异常,请点击左下角邮件反馈</p>
     
@@ -291,37 +291,17 @@ mete0r_author:
     .author-avatar-img:hover { transform: rotate(360deg) scale(1.05); }
     .author-name-text { font-size: 24px; font-weight: 800; margin: 0 0 8px 0; text-align: center; color: var(--text-p0); }
     .author-bio-text { font-size: 13px; color: var(--text-p2); line-height: 1.5; margin: 0 0 20px 0; text-align: center; }
-    .author-stats-box { display: flex; justify-content: space-around; margin-bottom: 24px; }
-    .stat-item { display: flex; flex-direction: column; align-items: center; }
-    .stat-count { font-size: 18px; font-weight: bold; color: var(--text-p1); margin-bottom: 2px; }
-    .stat-label { font-size: 12px; color: var(--text-p3); }
-    .author-follow-btn { display: flex; align-items: center; justify-content: center; gap: 8px; background: #739d73; color: #fff !important; text-decoration: none !important; padding: 10px 0; border-radius: 20px; font-size: 15px; font-weight: 600; transition: all 0.3s; border: 1px solid rgba(255,255,255,0.1); }
-    .author-follow-btn:hover { background: #5c805c; transform: translateY(-2px); }
+    .author-follow-btn { display: flex; align-items: center; justify-content: center; gap: 8px; background: #07C160; color: #fff !important; text-decoration: none !important; padding: 10px 0; border-radius: 20px; font-size: 15px; font-weight: 600; transition: all 0.3s; border: 1px solid rgba(255,255,255,0.1); }
+    .author-follow-btn:hover { background: #06ad56; transform: translateY(-2px); }
     </style>
-    
+
     <img src="/img/my-avatar.jpg" class="author-avatar-img" alt="avatar">
-    <h2 class="author-name-text">孙淮洲</h2>
-    <p class="author-bio-text">工科在读 性格 INFP<br>愿望是世界和平</p>
-    <div class="author-stats-box">
-      <div class="stat-item"><span class="stat-count" id="gh-followers">-</span><span class="stat-label">followers</span></div>
-      <div class="stat-item"><span class="stat-count" id="gh-following">-</span><span class="stat-label">following</span></div>
-      <div class="stat-item"><span class="stat-count" id="gh-repos">-</span><span class="stat-label">repos</span></div>
-    </div>
-    <a href="https://github.com/nz12138" target="_blank" class="author-follow-btn">
-      <i class="fa-brands fa-github"></i> Follow
+    <h2 class="author-name-text">小芝学姐</h2>
+    <p class="author-bio-text">hhhh<br>hhhh</p>
+
+    <a href="/img/my-avatar.jpg" target="_blank" class="author-follow-btn">
+      <i class="fa-brands fa-weixin"></i> 添加学姐微信
     </a>
-
-    <script>
-      const githubID = 'nz12138'; 
-      fetch(`https://api.github.com/users/${githubID}`).then(res => res.json()).then(data => {
-          if(!data.message) {
-            document.getElementById('gh-followers').innerText = data.followers || 0;
-            document.getElementById('gh-following').innerText = data.following || 0;
-            document.getElementById('gh-repos').innerText = data.public_repos || 0;
-          }
-        }).catch(err => console.log('GitHub API error', err));
-    </script>
-
 # 4. 近期动态 (仿照截图中 Timeline 设计，适配玻璃质感)
 # 4. 近期动态 (智能抓取 + 拒绝大框包小框版)
 mete0r_timeline:

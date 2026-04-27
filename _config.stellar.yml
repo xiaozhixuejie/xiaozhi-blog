@@ -31,28 +31,28 @@ structured_data:
 ######## Sidebar ########
 logo:
   avatar: '[/img/my-avatar.jpg](/about/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
-  title: '[<img src="/img/huaizhou.jpg" class="custom-logo" alt="HZZZZ小站">](/)' # 替换为图片 Logo
-  subtitle: '青山意气峥嵘 |似为我归来妩媚生' # 搬回您的原副标题
+  title: '[<img src="/img/logo1.png" style="width: 100%; max-width: 160px; height: auto; display: block; margin: 0 auto;" alt="小芝学姐">](/)'
+  subtitle: '你好 我是小芝 | 欢迎来到广外' # 替换为新的副标题
 
 menubar:
   columns: 4
   items:
-    - id: home
+    - id: supplies
       theme: '#1BCDFC'
-      title: '主页'
-      url: /
-    - id: about
+      title: '开学用品'
+      url: /2026/04/27/四、宿舍生活须知/
+    - id: documents
       theme: '#3DC550'
-      title: '项目' # 搬回您的原菜单名
-      url: /about/
-    - id: speak
+      title: '开学文件'
+      url: /2026/04/27/一、报到前核心准备/
+    - id: military
       theme: '#FA6400'
-      title: '动态' # 搬回您的原菜单名
-      url: /speak/
-    - id: links
+      title: '军训安排'
+      url: /2026/04/27/三、军训相关安排/
+    - id: todo
       theme: '#F44336'
-      title: '关于' # 搬回您的原菜单名
-      url: /about/
+      title: '必办事项'
+      url: /2026/04/27/五、入学后必办事项/
 
 ######## Main ########
 site_tree:
@@ -162,7 +162,7 @@ search:
 
 ######## Comments ########
 comments:
-  service: twikoo
+  service: false
   comment_title: 快来参与讨论吧~
   lazyload: false
 
@@ -220,14 +220,14 @@ footer:
   sitemap:
   content: |
     <div style="width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
-      <p style="margin: 4px 0;">Copyright &copy; 2026 HZ Lab</p>
+      <p style="margin: 4px 0;">Copyright &copy; 2026 小芝学姐</p>
       <p style="margin: 4px 0;">本站已平稳运行：<span id="site_runtime" style="color: #1BCDFC; font-weight: bold;">载入中...</span></p>
       <p style="margin: 4px 0;">累计访问人次：</p>
-      <img src="https://count.getloli.com/get/@hzlab_counter?theme=rule34&padding=7&offset=0" alt="Moe-Counter" style="display: block; margin: 8px auto 0;">
+      <img src="https://count.getloli.com/get/@xiaozhi_new_site?theme=rule34&padding=7&offset=0" alt="Moe-Counter" style="display: block; margin: 8px auto 0;">
     </div>
     <script>
       function show_runtime() {
-        var start_date = new Date("04/07/2026 15:30:00"); 
+        var start_date = new Date("04/27/2026 15:30:00"); 
         var now_date = new Date();
         var time_diff = now_date.getTime() - start_date.getTime();
         var d = Math.floor(time_diff / (24 * 3600 * 1000));
