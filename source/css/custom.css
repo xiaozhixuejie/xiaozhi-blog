@@ -247,3 +247,23 @@ html[data-theme="dark"] #fab-comment {
     left: 0;
     text-align: center;
 }
+
+/* =========================================
+   缩小中间文章卡片尺寸与排版优化
+========================================= */
+.l_main .post-list .post-card,
+.l_main > .post-card {
+    margin: 0 3% 20px 3% !important; /* 两侧留白，使卡片变窄变小 */
+    width: 94% !important;
+    padding: 1.5rem 1.8rem !important; /* 缩小内边距 */
+    border-radius: 20px !important;
+}
+/* 手机端恢复全宽以保证阅读体验 */
+@media (max-width: 768px) {
+    .l_main .post-list .post-card,
+    .l_main > .post-card {
+        margin: 0 0 15px 0 !important;
+        width: 100% !important;
+        padding: 1.2rem !important;
+    }
+}
