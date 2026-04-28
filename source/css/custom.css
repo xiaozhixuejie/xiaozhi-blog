@@ -57,13 +57,23 @@ body {
     margin-bottom: 20px !important;
 }
 
+/* 引入霞鹜文楷字体，提升阅读体验 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.css');
+
 /* 2. 侧边栏按钮排版 (同款彩色文字) */
 .menubar .menu-item {
     background: transparent !important;
+    transition: all 0.3s ease !important;
+}
+.menubar .menu-item:hover {
+    transform: translateY(-2px) !important;
 }
 .menubar .menu-item .title {
-    font-weight: 600 !important;
-    font-size: 15px !important;
+    font-family: "LXGW WenKai Screen", "STKaiti", "Kaiti", serif !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    letter-spacing: 2px !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1) !important;
 }
 
 /* 3. 顶部导航标签 (Pill样式) */
@@ -246,4 +256,39 @@ html[data-theme="dark"] #fab-comment {
     width: 100%;
     left: 0;
     text-align: center;
+}
+
+/* =========================================
+   微信/移动端浏览器兼容性修复 (防白屏、防错位)
+========================================= */
+@media screen and (max-width: 768px) {
+    /* 1. 禁用毛玻璃 fallback 到普通半透明，防止渲染死白 */
+    #aside, .card-widget, .sidebar, .widget, .l_left, .l_body .post-card, .widget-wrapper { 
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        background-color: rgba(255, 255, 255, 0.95) !important;
+    }
+    html[data-theme="dark"] #aside, 
+    html[data-theme="dark"] .card-widget, 
+    html[data-theme="dark"] .sidebar, 
+    html[data-theme="dark"] .widget,
+    html[data-theme="dark"] .l_left,
+    html[data-theme="dark"] .l_body .post-card,
+    html[data-theme="dark"] .widget-wrapper {
+        background-color: rgba(30, 30, 30, 0.95) !important;
+    }
+
+    /* 2. 强制改回滚动，解决 fixed 在移动端错位崩溃问题 */
+    body, #web_bg, .sidebar, .l_left {
+        background-attachment: scroll !important;
+    }
+
+    /* 3. 偏方：强制给侧边栏一个层级防重叠 */
+    #aside-content, .l_left {
+        background: rgba(255, 255, 255, 0.8) !important;
+    }
+    html[data-theme="dark"] #aside-content,
+    html[data-theme="dark"] .l_left {
+        background: rgba(30, 30, 30, 0.8) !important;
+    }
 }

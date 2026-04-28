@@ -37,22 +37,22 @@ logo:
 menubar:
   columns: 4
   items:
-    - id: supplies
-      theme: '#1BCDFC'
-      title: '开学用品'
-      url: /2026/04/27/四、宿舍生活须知/
-    - id: documents
-      theme: '#3DC550'
-      title: '开学文件'
-      url: /2026/04/27/一、报到前核心准备/
-    - id: military
-      theme: '#FA6400'
-      title: '军训安排'
-      url: /2026/04/27/三、军训相关安排/
     - id: todo
       theme: '#F44336'
       title: '必办事项'
       url: /2026/04/27/五、入学后必办事项/
+    - id: supplies
+      theme: '#1BCDFC'
+      title: '开学用品'
+      url: /2026/04/27/四、宿舍生活须知/
+    - id: intro
+      theme: '#3DC550'
+      title: '学院介绍'
+      url: /departments/
+    - id: military
+      theme: '#FA6400'
+      title: '军训安排'
+      url: /2026/04/27/三、军训相关安排/
 
 ######## Main ########
 site_tree:
