@@ -64,6 +64,7 @@ site_tree:
       '分类': /categories/
       '标签': /tags/
       '归档': /archives/
+      '院系介绍': /departments/
 
   index_blog:
     base_dir: blog
