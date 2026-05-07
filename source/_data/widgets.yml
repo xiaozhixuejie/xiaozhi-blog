@@ -9,7 +9,7 @@ mete0r_welcome:
     </style>
     <p style="margin: 0 0 8px 0; font-size: 14px; color: var(--text-p1);">欢迎 <span id="welcome-location" style="color: #f472b6; font-weight: bold;">地球</span> 的小伙伴</p>
     <p style="margin: 0 0 8px 0; font-size: 14px; color: var(--text-p1);">您的IP：<span id="welcome-ip" class="fog-ip" style="color: #fff; background: #fbbf24; padding: 2px 8px; border-radius: 8px; font-family: monospace;">正在侦测...</span></p>
-    <p style="margin: 0 0 8px 0; font-size: 14px; color: #7dd3fc; font-weight: bold;">欢迎来到广外 恭喜你开启美化的大学生活！</p>
+    <p style="margin: 0 0 8px 0; font-size: 14px; color: #7dd3fc; font-weight: bold;">欢迎来到广外 恭喜你开启美好的大学生活！</p>
     <p style="margin: 0 0 8px 0; font-size: 14px;"><a href="/about/" style="color: #86efac; border-bottom: 1px solid #86efac; text-decoration: none;">学姐滴个人主页</a></p>
     <hr style="border: 0; border-top: 1px solid rgba(0,0,0,0.1); margin: 12px 0;">
     <p style="font-size: 13px; color: var(--text-p3); margin: 0; line-height: 1.6;">若访问速度异常,请点击左下角邮件反馈</p>
